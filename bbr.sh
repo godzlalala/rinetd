@@ -5,8 +5,7 @@ echo　"
 0.0.0.0 22 0.0.0.0 22
 0.0.0.0 80 0.0.0.0 80
 0.0.0.0 8080 0.0.0.0 8080
-0.0.0.0 443 0.0.0.0 443
-" > rinetd.conf
+0.0.0.0 443 0.0.0.0 443" > rinetd.conf
 echo "
 [Unit]
 Description=rinetd
@@ -16,6 +15,5 @@ ExecStart=/root/rinetd -f -c /root/rinetd.conf raw venet0:0
 Restart=always
   
 [Install]
-WantedBy=multi-user.target
-" > /etc/systemd/system/rinetd.service
+WantedBy=multi-user.target" > /etc/systemd/system/rinetd.service
 systemctl enable rinetd.service && systemctl start rinetd.service
