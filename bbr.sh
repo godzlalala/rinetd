@@ -1,8 +1,7 @@
 #!/bin/sh
 wget --no-check-certificate https://raw.githubusercontent.com/mixool/rinetd/master/rinetd_bbr_powered -O /root/rinetd
 chmod +x rinetd
-echo　"
-0.0.0.0 22 0.0.0.0 22
+echo "0.0.0.0 22 0.0.0.0 22
 0.0.0.0 80 0.0.0.0 80
 0.0.0.0 8080 0.0.0.0 8080
 0.0.0.0 443 0.0.0.0 443" > rinetd.conf
