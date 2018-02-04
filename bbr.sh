@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 wget --no-check-certificate https://raw.githubusercontent.com/mixool/rinetd/master/rinetd_bbr_powered -O /root/rinetd
 chmod +x rinetd
 echo　"
